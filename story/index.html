@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PlatFormer- Play </title>
+    <!--Story-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+        body {
+            background: black;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            font-family: "Jim Nightshade";
+            color: white;
+            text-align: center;
+            font-size: 100px;
+            line-height: 500px;
+        }
+        
+        h2 {
+            font-family: "Jim Nightshade";
+            color: white;
+            text-align: center;
+            font-size: 80px;
+            line-height: 500px;
+        }
+        
+        h3 {
+            font-family: "Jim Nightshade";
+            color: white;
+            text-align: center;
+            font-size: 300px;
+            line-height: 170px;
+        }
+        
+        .fun {
+            font-family: "Jim Nightshade";
+            font-size: 30px;
+            padding: 20px;
+            padding-left: 55px;
+            padding-right: 55px;
+            background: #d4e157;
+            border: 3px solid black;
+            border-radius: 50px;
+            text-decoration: none;
+            color: black;
+            position: absolute;
+            top: 280px;
+            right: 600px;
+        }
+    </style>
+
+    <h1 id='1'>Once apon a time, not so long ago...</h1>
+    <h1 id='2'>There was a man called...</h1>
+    <h1 id='3'>Well, nevermind that, names don't matter.</h1>
+    <h1 id='4'>Or do they?</h1>
+    <h1 id='5'>This is a heroic tale of said man...</h1>
+    <h1 id='6'>His name was Ludovic Rufus.</h1>
+    <h2 id='7'>Now you can see why I regretted to tell you his name.</h2>
+    <h1 id='8'>It's kind of... strange, to say the least.</h1>
+    <h2 id='9'>Anyway, this man, Ludovic, went on an adventure.</h2>
+    <h2 id='10'>An adventure, that would be told, for centuries.</h2>
+    <h3 id='11'>PlatFormer</h3>
+    <center id='12'><a class='fun' href='/play/'>Play</a></center>
+    <script>
+        // The reason for all of the seperate functions below (ugh) is that when I tried it all in one function
+        // it didn't work at all, so I just put it into multiple repetitive functions.
+        // Also, feel free to change the story, mine kinda sucks, but keep the name.
+        $('#1').hide();
+        $('#2').hide();
+        $('#3').hide();
+        $('#4').hide();
+        $('#5').hide();
+        $('#6').hide();
+        $('#7').hide();
+        $('#8').hide();
+        $('#9').hide();
+        $('#10').hide();
+        $('#11').hide();
+        $('#12').hide();
+
+        var lineOne = function() {
+            $('#1').fadeIn(4000);
+            setTimeout(2000);
+            $('#1').fadeOut(4000);
+        };
+        var lineTwo = function() {
+            $('#2').fadeIn(4000);
+            setTimeout(2000);
+            $('#2').fadeOut(4000);
+        };
+        var lineThree = function() {
+            $('#3').fadeIn(4000);
+            setTimeout(2000);
+            $("#3").fadeOut(4000);
+        };
+        var lineFour = function() {
+            $('#4').fadeIn(4000);
+            setTimeout(2000);
+            $("#4").fadeOut(4000);
+        };
+        var lineFive = function() {
+            $('#5').fadeIn(4000);
+            setTimeout(2000);
+            $("#5").fadeOut(4000);
+        };
+        var lineSix = function() {
+            $('#6').fadeIn(4000);
+            setTimeout(2000);
+            $("#6").fadeOut(4000);
+        };
+        var lineSeven = function() {
+            $('#7').fadeIn(4000);
+            setTimeout(2000);
+            $("#7").fadeOut(4000);
+        };
+        // THESE UNNECESSARY FUNCTIONS ARE MALKING ME INSANE!
+        var lineEight = function() {
+            $('#8').fadeIn(4000);
+            setTimeout(2000);
+            $("#8").fadeOut(4000);
+        };
+        var lineNine = function() {
+            $('#9').fadeIn(4000);
+            setTimeout(2000);
+            $('#9').fadeOut(4000);
+        };
+        var lineTen = function() {
+            $('#10').fadeIn(4000);
+            setTimeout(2000);
+            $('#10').fadeOut(4000);
+        };
+        var lineEleven = function() {
+            $('#11').fadeIn(7000);
+            setTimeout(3000);
+            $('#11').fadeOut(4000);
+        };
+        var lineTwelve = function() {
+            $('#12').fadeIn(4000);
+        };
+        setTimeout(lineOne, 1000);
+        setTimeout(lineTwo, 9000);
+        setTimeout(lineThree, 17000);
+        setTimeout(lineFour, 25000);
+        setTimeout(lineFive, 33000);
+        setTimeout(lineSix, 41000);
+        setTimeout(lineSeven, 49000);
+        setTimeout(lineEight, 56000);
+        setTimeout(lineNine, 64000);
+        setTimeout(lineTen, 72000);
+        setTimeout(lineEleven, 80000);
+        setTimeout(lineTwelve, 88000);
+
+        document.onkeypress = function(e) {
+            if (e.keyCode == 32) {
+                var answer = confirm("Are you sure you want to skip?");
+                if (answer) {
+                    $('#1').remove();
+                    $('#2').remove();
+                    $('#3').remove();
+                    $('#4').remove();
+                    $('#5').remove();
+                    $('#6').remove();
+                    $('#7').remove();
+                    $('#8').remove();
+                    $('#9').remove();
+                    $('#10').remove();
+                    $('#11').remove();
+                    $('#12').fadeIn(4000);
+                }
+            }
+        };
+    </script>
+
+</body>
+
+</html>

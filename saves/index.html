@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Platformer- Load Game </title>
+</head>
+
+<body>
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+		body {
+			background: #cddc39;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+		
+		h1 {
+			font-family: "Jim Nightshade";
+			font-size: 70px;
+			margin-top: 5px;
+			margin-bottom: 50px;
+		}
+		
+		.save {
+			font-family: "Jim Nightshade";
+			font-size: 30px;
+			padding: 20px;
+			padding-left: 55px;
+			padding-right: 55px;
+			background: #d4e157;
+			border: 3px solid black;
+			border-radius: 50px;
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+	<center>
+		<h1> &nbsp;Load Game</h1>
+		<a id='s1' class='save' href='/story/'>Save 1 (Empty)</a> <br><br><br><br>
+		<a id='s2' class='save' href='/story/'>Save 2 (Empty)</a> <br><br><br><br>
+		<a id='s3' class='save' href='/story/'>Save 3 (Empty)</a> <br><br><br><br>
+		<a class='save' href='/'>Back</a>
+	</center>
+
+	<script>
+		if (localStorage.saves && localStorage.saves[0]) {
+			document.getElementById('s1').innerHTML = 'Save 1';
+		}
+		if (localStorage.saves && localStorage.saves[1]) {
+			document.getElementById('s2').innerHTML = 'Save 2';
+		}
+		if (localStorage.saves && localStorage.saves[2]) {
+			document.getElementById('s3').innerHTML = 'Save 3';
+		}
+	</script>
+
+</body>
+
+</html>
